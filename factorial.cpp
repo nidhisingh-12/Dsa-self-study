@@ -1,31 +1,23 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
+int factorial(int n);
+
 int main() {
-    //Write your code here
-    int fact;
-    cin>>fact;
-    
-    int result = 1;
-    if(fact==0)
-    {
-        
-        cout<<1;
-    }
-    else if(fact < 0)
-    {
-      
-        cout<<"Error";
 
-    }
-    else
-    {
-      for (int i = 1; i <= fact; i++) {
-        result = result * i;
-        
-      }
+  int n;
 
-      cout << result;
-    }
-    return 0;
+  cout << "Enter a positive integer: ";
+  cin >> n;
+
+  cout << "Factorial of " << n << " = " << factorial(n);
+
+  return 0;
+}
+
+int factorial(int n) {
+  if(n > 1)
+    return n * factorial(n - 1);
+  else
+    return 1;
 }
