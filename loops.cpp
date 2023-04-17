@@ -26,28 +26,40 @@ int main()
     // }   
 
     /*-----------prime number---------*/
-    int n;
-    cout<<"enter the value of n: "<<endl;
-    cin>>n;
+    // int n;
+    // cout<<"enter the value of n: "<<endl;
+    // cin>>n;
     
-    bool isPrime = 1;
+    // bool isPrime = 1;
 
-    for(int i=2; i<n; i++)
-    {
-        // rem =0 , not a prime
-        if(n%i == 0)
-        {
-            isPrime = 0;
-            break;
-        }
+    // for(int i=2; i<n; i++)
+    // {
+    //     // rem =0 , not a prime
+    //     if(n%i == 0)
+    //     {
+    //         isPrime = 0;
+    //         break;
+    //     }
         
-    }
-    if(isPrime == 0)
-        {
-            cout<<"Not a prime number"<<endl;
-        }
-        else{
-            cout<<"is a prime number"<<endl;
-        }
+    // }
+    // if(isPrime == 0)
+    //     {
+    //         cout<<"Not a prime number"<<endl;
+    //     }
+    //     else{
+    //         cout<<"is a prime number"<<endl;
+    //     }
+
+    /*-----practice on continue---*/
+    int n;
+    cin>>n;
+    for(int i=0; i<n; i++)
+    {
+        cout<<"hi"<<endl;
+        cout<<"hello"<<endl;
+        continue;
+        cout<<"reply once";
+    } 
+
     return 0;
 }
