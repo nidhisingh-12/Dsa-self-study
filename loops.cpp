@@ -1,71 +1,53 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int number;
-    cin >> number;
-    if (number > 0) // number is positive
-    {
-        cout << "number is positive" << endl;
-    }
-    else
-    { // otherwise it is negative
-        cout << "number is negative";
-    }
-     /*----------------------------------*/
-    int a, b;
-    cin >> a >> b;
-    if (a > b)
-    {
-        cout << "a is greater than b" << endl;
-    }
-    else
-    {
-        cout << "b is greater than a";
-    }
+    //sum of natural number
+    // int n;
+    // cout<<"Enter the value of n"<<endl;
+    // cin>>n;
+    // int sum = 0;
+    // for(int i=1; i<=n; i++)
+    // {
+    //     sum+=i;
+    // }
+    // cout<<sum<<endl; 
 
-     /*------------------------------------------------------*/
-    int m;
-    cout << "enter the value of m:" << endl;
-    cin >> m;
-    if (m > 0)
-    {
-        cout << "m is positive number" << endl;
-    }
-    else if (m < 0)
-    {
-        cout << "m is negative number" << endl;
-    }
-    else
-    {
-        cout << "m is zero";
-    }
+    /*---fibonacci series----*/
+    // int n=10;
+    // int a = 0;
+    // int b = 1;
+    // for(int i=1; i<=n; i++)
+    // {
+    //   int nextnumber = a+b;
+    //   cout<<nextnumber<<" ";
+    //   a = b;
+    //   b = nextnumber;  
+    // }   
 
-    /*---------------------------*/
-    // print natural number
-    int x;
-    cin>>x;
-    int i=1;
-    while(i<=x){
-        cout<<i<<" ";
-        i=i+1;
-    }
-
-
-    /*--------------*/
-    // print sum of natural number
-    int t;
-    cin>>t;
-
-    int i=1;
-    int sum=0;
-    while(i<=t)
-    {
-        sum=sum+i;
-        i=i+1;
-    }
-    cout<<"value of sum is:"<<sum<<endl;
+    /*-----------prime number---------*/
+    int n;
+    cout<<"enter the value of n: "<<endl;
+    cin>>n;
     
-    
+    bool isPrime = 1;
+
+    for(int i=2; i<n; i++)
+    {
+        // rem =0 , not a prime
+        if(n%i == 0)
+        {
+            isPrime = 0;
+            break;
+        }
+        
+    }
+    if(isPrime == 0)
+        {
+            cout<<"Not a prime number"<<endl;
+        }
+        else{
+            cout<<"is a prime number"<<endl;
+        }
     return 0;
 }
