@@ -17,7 +17,7 @@ int main()
        }
        if(i==2)
        {
-        cout<<t2<<" ,";
+        cout<<t2<<" , ";
         continue;
        }
         
